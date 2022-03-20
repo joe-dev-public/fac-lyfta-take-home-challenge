@@ -13,7 +13,39 @@ body {
     max-width: 42rem;
 }
 
+#video-inner-container {
+    align-items: end;
+    display: flex;
+    height: 180px;
+    margin-bottom: 0.5rem;
+    width: 320px;
+}
+
+#video {
+    position: absolute;
+    z-index: -1;
+}
+
 #video-controls {
     display: none;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#playpause {
+    background: none;
+    border: 0;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#playpause:hover {
+    /* color: #f00; */
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 2rem !important;
 }

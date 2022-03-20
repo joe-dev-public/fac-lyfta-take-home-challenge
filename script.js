@@ -18,7 +18,9 @@ videoControlsEl.style.display = 'block';
 playPauseEl.addEventListener('click', (event) => {
     if (videoEl.paused || videoEl.ended) {
         videoEl.play();
+        event.target.innerText = 'pause';
     } else {
         videoEl.pause();
+        event.target.innerText = 'play_arrow';
     }
 });
