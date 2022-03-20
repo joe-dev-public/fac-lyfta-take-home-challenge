@@ -15,12 +15,20 @@ videoEl.controls = false;
 // Our custom controls are hidden by default, and only displayed if JS is on:
 videoControlsEl.style.display = 'block';
 
-playPauseEl.addEventListener('click', (event) => {
+function togglePlayPause() {
     if (videoEl.paused || videoEl.ended) {
         videoEl.play();
-        event.target.innerText = 'pause';
+        playPauseEl.querySelector('.control-icon').innerText = 'pause';
     } else {
         videoEl.pause();
-        event.target.innerText = 'play_arrow';
+        playPauseEl.querySelector('.control-icon').innerText = 'play_arrow';
     }
+}
+
+playPauseEl.addEventListener('click', () => {
+    togglePlayPause();
+});
+
+videoEl.addEventListener('click', () => {
+    togglePlayPause();
 });

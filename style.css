@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 
@@ -14,16 +14,19 @@ body {
 }
 
 #video-inner-container {
+    background-color: blue;
     align-items: end;
     display: flex;
     height: 180px;
     margin-bottom: 0.5rem;
+    /* position: relative; */
     width: 320px;
+    /* z-index: -3; */
 }
 
 #video {
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 #video-controls {
@@ -39,6 +42,8 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
 #playpause:hover {
