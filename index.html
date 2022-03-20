@@ -16,10 +16,18 @@
 
         <main>
 
-            <video controls width="320">
-                <source src="video.mp4" type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-            </video>
+            <!-- https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cross_browser_video_player -->
+            <figure id="videoContainer">
+                <video id="video" controls poster="poster.png" width="320">
+                    <source src="video.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <figcaption>Description of video</figcaption>
+            </figure>
+
+            <ul id="video-controls" class="controls">
+                <li><button id="playpause" type="button">Play/Pause</button></li>
+            </ul>
 
         </main>
 

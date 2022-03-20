@@ -12,3 +12,8 @@ body {
     margin: 0 auto;
     max-width: 42rem;
 }
+
+#video-controls {
+    display: none;
+    list-style: none;
+}
