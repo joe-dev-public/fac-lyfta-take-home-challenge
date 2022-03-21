@@ -25,6 +25,10 @@ This currently seems to work fine on mobile. It *was* working fine on desktop, b
 - (Real video players include some feedback about buffering, but maybe it's just to let the user know what the browser is doing behind the scenes.)
 - The .play method returns a promise. Would this be part of a solution to the fetching/playing problem? (My code doesn't attempt to catch any errors. I wouldn't yet know what do with them!)
 
+## Next steps?
+
+Implement more of the video player! This was a fun challenge and it feels like I've only scratched the surface.
+
 ## Notes
 
 I also implemented the following user stories: [#1](https://github.com/joe-dev-public/fac-lyfta-take-home-challenge/issues/1), [#14](https://github.com/joe-dev-public/fac-lyfta-take-home-challenge/issues/14), [#30](https://github.com/joe-dev-public/fac-lyfta-take-home-challenge/issues/30).
