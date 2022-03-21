@@ -13,6 +13,10 @@ body {
     max-width: 42rem;
 }
 
+#video-outer-container {
+    margin: 0;
+}
+
 #video-inner-container {
     background-color: blue;
     align-items: end;
@@ -29,28 +33,46 @@ body {
     /* z-index: -1; */
 }
 
-#video-controls {
+.control-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+#initial-play-button {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#initial-play-button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#initial-play-button > span {
+    font-size: 4rem;
+}
+
+#video-controls-toolbar {
     display: none;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#playpause {
+#initial-play-button, #playpause {
     background: none;
     border: 0;
     color: #fff;
     margin: 0;
     padding: 0;
-    position: relative;
-    z-index: 1;
+}
+
+#playpause > span {
+    font-size: 2rem;
 }
 
 #playpause:hover {
     /* color: #f00; */
     cursor: pointer;
-}
-
-.material-icons {
-    font-size: 2rem !important;
 }

@@ -29,11 +29,22 @@
                         <source src="video.mp4" type="video/mp4">
                         Sorry, your browser doesn't support embedded videos.
                     </video>
-                    <ul id="video-controls" class="controls">
-                        <li><button id="playpause" type="button"><span class="control-icon material-icons">play_arrow</span></button></li>
+                    <button id="initial-play-button" type="button" class="control-overlay">
+                        <span class="material-icons">
+                            play_circle_filled
+                            <!-- play_circle_outline -->
+                            <!-- play_arrow -->
+                        </span>
+                    </button>
+                    <ul id="video-controls-toolbar" class="control-overlay">
+                        <li>
+                            <button id="playpause" type="button">
+                                <span class="control-icon material-icons">play_arrow</span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
-                <figcaption>Description of video</figcaption>
+                <figcaption>Description of video can go here</figcaption>
             </figure>
 
         </main>
