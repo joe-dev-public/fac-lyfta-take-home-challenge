@@ -44,9 +44,8 @@ body {
     width: 100%;
 }
 
-#initial-play-button:hover {
+#initial-play-button:hover, #initial-play-button:focus {
     color: red;
-    cursor: pointer;
 }
 
 #initial-play-button > span {
